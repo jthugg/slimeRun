@@ -1,0 +1,262 @@
+@charset "UTF-8";
+*{
+	text-align: center;
+	box-sizing: border-box;
+ 	margin: 0;
+   	padding: 0;
+	font-family: 'Jua', sans-serif;
+}
+
+.login-box {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  width: 1000px;
+	  padding: 70px;
+	  transform: translate(-50%, -50%);
+	  background: rgba(0,0,0,#00C3FF);
+	  box-sizing: border-box;
+	  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+	  border-radius: 10px;
+	  font-size: 35px;
+	  text-align : center;
+}
+
+.wrap {
+	margin: 0 auto 0 auto;
+	text-align: center;
+	display:block;
+}
+
+#btn{
+	margin: 20px;
+}
+
+.title{
+	margin-bottom:30px;
+}
+
+html, body {
+	margin:0;
+ 	padding:0;
+ 	color: #1e6b7b;
+	height: 100%;
+	background: linear-gradient(#fff, #c2e9fb);
+}
+
+.center-outer {
+	display: table;
+	width: auto;
+	height: 100%;
+}
+
+.center-inner {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+header {
+ 	position: fixed;
+  	top: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	padding: 1.3rem;
+	color: white;
+	background-color: #3498db;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+}
+
+a {
+	position: relative;
+	margin: auto;
+	color: #fff;
+	z-index: 10;
+	font-size: 2.5em;
+	text-decoration: none;
+	text-align: center;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+  height: 100%;  
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: 0;
+  transition: 0.5s ease;
+  z-index: 1;
+  background-color: #3498db;
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  padding: 8px 0;
+  top: 4px;
+  right: 4px;
+  user-select: none;
+  width: auto;
+  margin: 0;
+}
+
+.burger-icon .burger-sticks {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 25px;
+}
+
+.burger-icon .burger-sticks:before,
+.burger-icon .burger-sticks:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.burger-icon .burger-sticks:before {
+  top: 5px;
+}
+
+.burger-icon .burger-sticks:after {
+  top: -5px;
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked~.menu {
+  max-width: 200px;
+}
+
+.burger-check:checked~.burger-icon .burger-sticks {
+  background: transparent;
+}
+
+.burger-check:checked~.burger-icon .burger-sticks:before {
+  transform: rotate(-45deg);
+}
+
+.burger-check:checked~.burger-icon .burger-sticks:after {
+  transform: rotate(45deg);
+}
+
+.burger-check:checked~.burger-icon:not(.steps) .burger-sticks:before,
+.burger-check:checked~.burger-icon:not(.steps) .burger-sticks:after {
+  top: 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+button {
+    margin: 20px;
+}
+
+.w-btn {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0.5 10px 30px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-outline {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0.5 10px 30px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-indigo {
+	width: 190px;
+    background-color: aliceblue;
+    color: #1e6b7b;
+    border: 3px solid black;
+}
+
+.w-btn-indigo-outline {
+    border: 3px solid aliceblue;
+    color: #1e6b7b;
+}
+
+.w-btn-indigo-outline:hover {
+    color: #1e6b7b;
+    background: aliceblue;
+}
+.w-btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.form-wrapper__input{
+  margin: 5px 0 10px 0;
+  width: 250px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 12px;
+  border-bottom: 1px solid #8dabfb;
+  opacity: .8;
+}
+
+.form-wrapper__input::placeholder{
+  color: #8dabfb;
+  opacity: .8;
+} 
+
+@media (prefers-reduced-motion: no-preference) {
+.App-logo {
+   animation: App-logo-spin infinite 20s linear;
+}
+   }
+
+.App-header {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: calc(10px + 2vmin);
+}
+
+.title{
+   font-size: 50px;
+}
+th {
+	width: 300px;
+}
+td {
+	padding: 15px;
+}
